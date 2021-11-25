@@ -39,6 +39,8 @@ class SettingsActivity : SimpleActivity() {
         updateTextColors(settings_holder)
         setupSectionColors()
         invalidateOptionsMenu()
+
+        setupCustomizeColorsButton()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -207,4 +209,12 @@ class SettingsActivity : SimpleActivity() {
         settings_enable_root_access.isChecked = enable
         config.enableRootAccess = enable
     }
+
+    private fun setupCustomizeColorsButton() {
+        settings_customize_colors_button.setOnClickListener {
+            startCustomizationActivity()
+        }
+    }
+
+
 }
