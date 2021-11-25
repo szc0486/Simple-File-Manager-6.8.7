@@ -41,6 +41,7 @@ class SettingsActivity : SimpleActivity() {
         invalidateOptionsMenu()
 
         setupCustomizeColorsButton()
+        setupManageFavoritesButton()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -216,5 +217,9 @@ class SettingsActivity : SimpleActivity() {
         }
     }
 
-
+    private fun setupManageFavoritesButton() {
+        settings_manage_favorites_button.setOnClickListener {
+            startActivity(Intent(this, FavoritesActivity::class.java))
+        }
+    }
 }

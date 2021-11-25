@@ -18,6 +18,13 @@
             android:background="#2196F3"
             android:text="@string/customize_colors" />
 
+        <Button
+            android:id="@+id/settings_manage_favorites_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDDC39"
+            android:text="Button" />
+
         <RelativeLayout
             android:id="@+id/settings_customize_colors_holder"
             android:layout_width="match_parent"
