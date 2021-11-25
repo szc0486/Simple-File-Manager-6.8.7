@@ -23,7 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#CDDC39"
-            android:text="Button" />
+            android:text="@string/manage_favorites" />
+
+        <Button
+            android:id="@+id/settings_change_date_time_format_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:text="@string/change_date_and_time_format" />
 
         <RelativeLayout
             android:id="@+id/settings_customize_colors_holder"

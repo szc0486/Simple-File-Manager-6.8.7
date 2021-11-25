@@ -42,6 +42,7 @@ class SettingsActivity : SimpleActivity() {
 
         setupCustomizeColorsButton()
         setupManageFavoritesButton()
+        setupChangeDateTimeFormatButton()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -220,6 +221,12 @@ class SettingsActivity : SimpleActivity() {
     private fun setupManageFavoritesButton() {
         settings_manage_favorites_button.setOnClickListener {
             startActivity(Intent(this, FavoritesActivity::class.java))
+        }
+    }
+
+    private fun setupChangeDateTimeFormatButton() {
+        settings_change_date_time_format_button.setOnClickListener {
+            ChangeDateTimeFormatDialog(this) {}
         }
     }
 }
